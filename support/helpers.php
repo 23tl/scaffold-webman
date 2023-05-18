@@ -119,7 +119,7 @@ function path_combine(string $front, string $back): string
 }
 
 /**
- * AccessResponse
+ * Response
  * @param int $status
  * @param array $headers
  * @param string $body

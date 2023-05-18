@@ -34,7 +34,12 @@
     "illuminate/pagination": "^10.6",
     "illuminate/events": "^10.6",
     "symfony/var-dumper": "^6.2",
-    "illuminate/redis": "^10.3"
+    "illuminate/redis": "^10.3",
+    "vlucas/phpdotenv": "^5.5"
+  }
+  ,
+  "require-dev": {
+    "roave/security-advisories": "dev-latest"
   },
   "suggest": {
     "ext-event": "For better performance. "

@@ -13,16 +13,16 @@
  */
 
 return [
-    'default' => 'mysql',
+    'default' => getenv('DB_CONNECTION'),
     // 各种数据库配置
     'connections' => [
         'mysql' => [
             'driver'      => 'mysql',
-            'host'        => '127.0.0.1',
-            'port'        => 3306,
-            'database'    => 'services',
-            'username'    => 'root',
-            'password'    => '123456',
+            'host'        => getenv('DB_MASTER_READ_HOST'),
+            'port'        => getenv('DB_MASTER_READ_PORT'),
+            'database'    => getenv('DB_MASTER_DATABASE'),
+            'username'    => getenv('DB_MASTER_USERNAME'),
+            'password'    => getenv('DB_MASTER_PASSWORD'),
             'unix_socket' => '',
             'charset'     => 'utf8mb4',
             'collation'   => 'utf8mb4_unicode_ci',

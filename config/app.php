@@ -15,7 +15,7 @@
 use support\Request;
 
 return [
-    'debug' => true,
+    'debug' => getenv('APP_DEBUG'),
     'error_reporting' => E_ALL,
     'default_timezone' => 'Asia/Shanghai',
     'request_class' => Request::class,
@@ -23,5 +23,5 @@ return [
     'runtime_path' => base_path(false) . DIRECTORY_SEPARATOR . 'runtime',
     'controller_suffix' => 'Controller',
     'controller_reuse' => false,
-    'name' => 'service'
+    'name' => getenv('APP_NAME')
 ];
